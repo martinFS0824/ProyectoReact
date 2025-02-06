@@ -1,0 +1,11 @@
+.carousel-container{
+    width: 90vw;
+    text-align: center;
+        img{
+            width: 186px;
+            height: 186px;
+            object-fit: cover;
+            padding: 20px;
+            border: 1px solid lightgray;
+        }
+} 
