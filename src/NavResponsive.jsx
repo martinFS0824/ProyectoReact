@@ -1,8 +1,20 @@
+import { useEffect } from 'react';
 import './NavResponsive.css'
 const NavResponsive = () => {
+    const arribaEnScroll = () => {
+    const top = document.querySelector("nav");
+    window.addEventListener("scroll", ()=>{
+        if(window.scrollY > 0){
+          top.classList.add("top")
+        }else{
+          top.classList.remove("top")
+          }
+        })
+    }
+    useEffect(()=>{arribaEnScroll()},[]);
     return (
         <>
-            <nav>
+            <nav className='nav-responsive'>
         <a href="#">
           <img className="nav-logo" src="./public/logo.png" alt="logo Bakery" />
         </a>

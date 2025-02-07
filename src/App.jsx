@@ -10,6 +10,7 @@ import Footer from './Footer'
 import { CartProvider } from './context/CartContext'
 import Cart from './Cart/cart'
 import Slider from './Slider'
+import NavResponsive from './NavResponsive'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     <>
     <CartProvider>
       <Warning/>
+      <NavResponsive></NavResponsive>
       <Nav/>
       <Banner/>
       <section className='section-title'>

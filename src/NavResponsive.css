@@ -1,4 +1,4 @@
-nav {
+.nav-responsive {
   position: fixed;
   width: 100vw;
   display: flex;
@@ -50,7 +50,7 @@ nav {
     }
   }
 }
-nav ul li {
+.nav-responsive ul li {
   list-style: none;
   color: #212121;
   line-height: 2.5rem;
@@ -62,7 +62,7 @@ nav ul li {
     opacity: .5;
   }
 }
-nav button {
+.nav-responsive button {
   background-color: transparent;
   border: none;
   color: #212121;
@@ -79,6 +79,23 @@ nav button {
     transition: 0.5s ease;
   }
 }
-nav svg:hover {
+.nav-responsive svg:hover {
   cursor: pointer;
+}
+.nav-responsive{
+  display: none;
+}
+.top{
+  top:0;
+}
+@media (max-width: 768px){
+  .nav-responsive{
+    display: flex;
+    z-index:2;
+    /* top: 0; */
+  }
+
+  .nav{
+    display: none;
+  }
 }

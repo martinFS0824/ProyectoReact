@@ -5,7 +5,7 @@ import CarritoIcon from './Carrito'
 function Nav() {
     return (
         <>
-        <nav>
+        <nav className='nav'> 
             <a href="/"><img className='logo' src="logo.png" alt="Logo" /></a>
             <ul>
                 <li><a href="#">Ofertas</a></li>

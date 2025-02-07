@@ -6,6 +6,15 @@ export const cartInitialSate = {
     { id: 2, nombre: "Pancakes", precio: 35.99, precioAntiguo:44.99, img:'public/pancakes.jpg'},
     { id: 3, nombre: "Avocado Toast", precio: 17.99, precioAntiguo:20.99, img:'public/avocado.jpg'},
     { id: 4, nombre: "Mermelada Casera", precio: 24.99, precioAntiguo:29.99, img:'public/orange.jpg'},
+    // { id: 5, nombre: "Aceite de Oliva", precio: 74.99, precioAntiguo:100, img:'public/slider_1.jpg'},
+    // { id: 6, nombre: "Hortalizas a Granel", precio: 8.90, precioAntiguo:10.99, img:'public/slider_2.jpg'},
+    // { id: 7, nombre: "Croissant", precio: 16.99, precioAntiguo:19.99, img:'public/slider_3.jpg'},
+    // { id: 8, nombre: "Mermelada de Limón", precio: 24.99, precioAntiguo:29.99, img:'public/slider_4.jpg'},
+    // { id: 9, nombre: "Melón", precio: 20.00, precioAntiguo:30.00, img:'public/slider_5.jpg'},
+    // { id: 10, nombre: "Nueces", precio: 10.99, precioAntiguo:15.99, img:'public/slider_6.jpg'},
+    // { id: 11, nombre: "Café de Especialidad", precio: 14.00, precioAntiguo:20.00, img:'public/slider_7.jpg'},
+    // { id: 12, nombre: "Torta Red Velvet", precio: 24.99, precioAntiguo:29.99, img:'public/slider_8.jpg'},
+
   ],
   cart: [],
 };
