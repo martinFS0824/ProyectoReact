@@ -8,4 +8,12 @@
             padding: 20px;
             border: 1px solid lightgray;
         }
-} 
+}
+@media (max-width: 768px){
+    .carousel-container{
+        img{
+            width: 90%;
+            height: 90%;
+        }
+    }
+  }

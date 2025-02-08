@@ -9,19 +9,25 @@ const Cart = () => {
     const [state, dispatch] = useReducer(cartReducer, cartInitialSate);
 
     const addToCart = (id)=>{
-      dispatch({type: TYPES.ADD_TO_CART, payload:id})
+      dispatch({type: TYPES.ADD_TO_CART, payload:id});
     }
     const removeFromCart = (id) =>{
-      dispatch({type: TYPES.REMOVE_ITEM, payload: id})
+      dispatch({type: TYPES.REMOVE_ITEM, payload: id});
       
     }
-    const clearCart = () =>{}
+    const removeAllItems = (id) =>{
+      dispatch({type:TYPES.REMOVE_ALL_ITEMS, payload:id});
+    }
+    const clearCart = () =>{
+      dispatch({type:TYPES.CLEAR_CART});
+    }
   return (
     <>
       <div className="cart-container">
         <div className="products">{state.products.map(product => <Product key={product.id} product={product} addToCart={addToCart} />)}</div>
-        <div>{state.cart.map(item => <CartItem key={item.id} item={item} removeFromCart={removeFromCart} />)}</div>
       </div>
+      {state.cart.length> 0 && <button style={{backgroundColor:"#FF6961"}} onClick={clearCart}>Vaciar Carrito</button>}
+      <div>{state.cart.map(item => <CartItem key={item.id} item={item} removeFromCart={removeFromCart} removeAllItems={removeAllItems}/>)}</div>
     </>
   );
 };

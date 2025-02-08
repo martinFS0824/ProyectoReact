@@ -53,8 +53,13 @@ export function cartReducer(state, action) {
           };
     }
     case TYPES.REMOVE_ALL_ITEMS: {
+      return {
+        ...state,
+            cart: state.cart.filter(item => item.id !== action.payload)
+      }
     }
     case TYPES.CLEAR_CART: {
+      return cartInitialSate;
     }
   }
 }
